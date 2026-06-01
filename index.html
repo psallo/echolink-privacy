@@ -8,46 +8,110 @@
     body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
     h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 32px; }
     a { color: #007aff; }
+    .lang-switch { margin-bottom: 32px; }
+    .lang-switch button { padding: 6px 16px; margin-right: 8px; border: 1px solid #007aff; border-radius: 6px; cursor: pointer; font-size: 14px; background: white; color: #007aff; }
+    .lang-switch button.active { background: #007aff; color: white; }
+    .section { display: none; }
+    .section.active { display: block; }
   </style>
 </head>
 <body>
-  <h1>EchoLink - Orb Chain Privacy Policy</h1>
-  <p>Last updated: June 1, 2026</p>
+  <div class="lang-switch">
+    <button class="active" onclick="setLang('ko', this)">한국어</button>
+    <button onclick="setLang('en', this)">English</button>
+  </div>
 
-  <h2>1. 수집하는 정보</h2>
-  <p>EchoLink는 계정 생성이나 개인정보 입력을 요구하지 않습니다. 앱은 다음 정보를 수집할 수 있습니다:</p>
-  <ul>
-    <li>광고 식별자(IDFA): 맞춤형 광고 제공을 위해 사용자 동의 후 수집 (iOS 14+ ATT 정책 준수)</li>
-    <li>기기 정보 및 앱 사용 데이터: Google AdMob을 통한 광고 서비스 제공 목적</li>
-    <li>인앱 구매 정보: RevenueCat을 통한 구매 처리 및 복원 목적</li>
-    <li>게임 진행 데이터(스테이지, 점수): 기기 내 로컬 저장만 수행, 외부 전송 없음</li>
-  </ul>
+  <!-- 한국어 -->
+  <div id="ko" class="section active">
+    <h1>EchoLink - Orb Chain 개인정보처리방침</h1>
+    <p>최종 업데이트: 2026년 6월 1일</p>
 
-  <h2>2. 정보 사용 목적</h2>
-  <ul>
-    <li>광고 표시 및 광고 성과 측정</li>
-    <li>인앱 구매 처리 및 복원</li>
-    <li>앱 서비스 개선</li>
-  </ul>
+    <h2>1. 수집하는 정보</h2>
+    <p>EchoLink는 계정 생성이나 개인정보 입력을 요구하지 않습니다. 앱은 다음 정보를 수집할 수 있습니다:</p>
+    <ul>
+      <li>광고 식별자(IDFA): 맞춤형 광고 제공을 위해 사용자 동의 후 수집 (iOS 14+ ATT 정책 준수)</li>
+      <li>기기 정보 및 앱 사용 데이터: Google AdMob을 통한 광고 서비스 제공 목적</li>
+      <li>인앱 구매 정보: RevenueCat을 통한 구매 처리 및 복원 목적</li>
+      <li>게임 진행 데이터(스테이지, 점수): 기기 내 로컬 저장만 수행, 외부 전송 없음</li>
+    </ul>
 
-  <h2>3. 제3자 서비스</h2>
-  <p>본 앱은 다음 제3자 서비스를 사용합니다:</p>
-  <ul>
-    <li><strong>Google AdMob</strong> — 광고 서비스 (<a href="https://policies.google.com/privacy">개인정보처리방침</a>)</li>
-    <li><strong>RevenueCat</strong> — 인앱 구매 처리 (<a href="https://www.revenuecat.com/privacy">개인정보처리방침</a>)</li>
-  </ul>
+    <h2>2. 정보 사용 목적</h2>
+    <ul>
+      <li>광고 표시 및 광고 성과 측정</li>
+      <li>인앱 구매 처리 및 복원</li>
+      <li>앱 서비스 개선</li>
+    </ul>
 
-  <h2>4. 광고 추적 (iOS)</h2>
-  <p>앱 첫 실행 시 Apple의 앱 추적 투명성(ATT) 정책에 따라 광고 추적 동의를 요청합니다. 동의하지 않으면 맞춤형 광고 대신 일반 광고가 표시됩니다.</p>
+    <h2>3. 제3자 서비스</h2>
+    <p>본 앱은 다음 제3자 서비스를 사용합니다:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — 광고 서비스 (<a href="https://policies.google.com/privacy">개인정보처리방침</a>)</li>
+      <li><strong>RevenueCat</strong> — 인앱 구매 처리 (<a href="https://www.revenuecat.com/privacy">개인정보처리방침</a>)</li>
+    </ul>
 
-  <h2>5. 데이터 보관 및 삭제</h2>
-  <p>게임 진행 데이터는 기기에만 저장되며, 앱 삭제 시 함께 삭제됩니다.</p>
+    <h2>4. 광고 추적 (iOS)</h2>
+    <p>앱 첫 실행 시 Apple의 앱 추적 투명성(ATT) 정책에 따라 광고 추적 동의를 요청합니다. 동의하지 않으면 맞춤형 광고 대신 일반 광고가 표시됩니다.</p>
 
-  <h2>6. 아동 개인정보 보호</h2>
-  <p>본 앱은 13세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+    <h2>5. 데이터 보관 및 삭제</h2>
+    <p>게임 진행 데이터는 기기에만 저장되며, 앱 삭제 시 함께 삭제됩니다.</p>
 
-  <h2>7. 문의</h2>
-  <p>개인정보 처리방침에 관한 문의는 아래 이메일로 연락 주세요:<br>
-  <a href="mailto:treasure0613@gmail.com">treasure0613@gmail.com</a></p>
+    <h2>6. 아동 개인정보 보호</h2>
+    <p>본 앱은 13세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>개인정보 처리방침에 관한 문의는 아래 이메일로 연락 주세요:<br>
+    <a href="mailto:treasure0613@gmail.com">treasure0613@gmail.com</a></p>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="section">
+    <h1>EchoLink - Orb Chain Privacy Policy</h1>
+    <p>Last updated: June 1, 2026</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>EchoLink does not require account creation or submission of personal information. The app may collect the following:</p>
+    <ul>
+      <li>Advertising Identifier (IDFA): Collected with user consent for personalized ads, in compliance with iOS 14+ ATT policy</li>
+      <li>Device information and app usage data: Used for ad delivery via Google AdMob</li>
+      <li>In-app purchase information: Used for purchase processing and restoration via RevenueCat</li>
+      <li>Game progress data (stage, score): Stored locally on device only — never transmitted externally</li>
+    </ul>
+
+    <h2>2. How We Use Information</h2>
+    <ul>
+      <li>To display advertisements and measure ad performance</li>
+      <li>To process and restore in-app purchases</li>
+      <li>To improve app services</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>This app uses the following third-party services:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — Advertising (<a href="https://policies.google.com/privacy">Privacy Policy</a>)</li>
+      <li><strong>RevenueCat</strong> — In-app purchase processing (<a href="https://www.revenuecat.com/privacy">Privacy Policy</a>)</li>
+    </ul>
+
+    <h2>4. Ad Tracking (iOS)</h2>
+    <p>On first launch, the app requests consent for ad tracking via Apple's App Tracking Transparency (ATT) framework. If you decline, generic ads will be shown instead of personalized ads.</p>
+
+    <h2>5. Data Retention and Deletion</h2>
+    <p>Game progress data is stored only on your device and is deleted when the app is uninstalled.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>7. Contact</h2>
+    <p>For questions about this privacy policy, please contact us at:<br>
+    <a href="mailto:treasure0613@gmail.com">treasure0613@gmail.com</a></p>
+  </div>
+
+  <script>
+    function setLang(lang, btn) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
 </body>
 </html>
